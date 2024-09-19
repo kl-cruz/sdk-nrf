@@ -10,6 +10,7 @@ rsource "bluetooth/Kconfig"
 rsource "entropy/Kconfig"
 rsource "flash/Kconfig"
 rsource "gpio/Kconfig"
+rsource "nrf_led/Kconfig"
 rsource "hw_cc3xx/Kconfig"
 
 if MPSL && !MPSL_FEM_ONLY

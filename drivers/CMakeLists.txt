@@ -7,6 +7,7 @@
 add_subdirectory(entropy)
 add_subdirectory(flash)
 add_subdirectory(gpio)
+add_subdirectory(nrf_led)
 add_subdirectory(hw_cc3xx)
 if (CONFIG_MPSL AND NOT CONFIG_MPSL_FEM_ONLY)
   add_subdirectory(mpsl)
