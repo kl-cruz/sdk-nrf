@@ -1,0 +1,15 @@
+# Copyright (c) 2024, Nordic Semiconductor
+# SPDX-License-Identifier: Apache-2.0
+
+description: NRF LEDs parent node
+
+compatible: "nrf-leds"
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+  label:
+    type: string
+    description: |
+      Human readable string.
