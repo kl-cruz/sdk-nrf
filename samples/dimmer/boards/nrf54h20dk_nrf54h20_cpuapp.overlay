@@ -1,0 +1,31 @@
+&timer130 {
+	status = "reserved";
+};
+
+&gpiote130 {
+	status = "reserved";
+};
+
+&gpio9 {
+	status = "okay";
+};
+
+&dppic130 {
+	owned-channels = <0 1>;
+	sink-channels = <0 1>;
+	status = "okay";
+};
+
+&dppic133 {
+	owned-channels = <0 1>;
+	source-channels = <0 1>;
+	status = "okay";
+};
+
+/ {
+	nrf_led:nrf-leds {
+		compatible = "nrf-leds";
+		status = "okay";
+		gpios = <&gpio9 0 GPIO_ACTIVE_LOW>;
+	};
+};
